@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   let artistsArray = []
   for (let i = 0; i < array.length; i++){
-    let alive = artists[i]["years"].split(" - ")
+    let alive = array[i]["years"].split(" - ")
     let born = parseInt(alive[0])
     let died = parseInt(alive[1])
     if (born >= 1900 && died <= 2000){
