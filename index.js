@@ -250,7 +250,6 @@ function get20s(array) {
     let alive = artists[i]["years"].split(" - ")
     let born = parseInt(alive[0])
     let died = parseInt(alive[1])
-    // console.log(`Born in ${born} and died in ${died}`)
     if (born >= 1900 && died <= 2000){
       artistsArray.push(array[i]["name"])
     }
